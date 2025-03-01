@@ -3,286 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium eBooks & Excel templates for business success. Professionally designed, customizable templates available for instant download.">
-    <meta name="keywords" content="eBook Templates, Excel Templates, Downloadable Resources, Business Tools, Digital Products">
-    <title>Premium eBooks & Excel Templates | Digital Business Resources</title>
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Business Excel Templates",
-        "image": "images/excel-template-mockup.jpg",
-        "description": "Professionally designed Excel templates for business optimization",
-        "brand": "DigitalBizTools",
-        "offers": {
-            "@type": "Offer",
-            "url": "https://www.yourdomain.com",
-            "priceCurrency": "USD",
-            "price": "29.99"
-        }
-    }
-    </script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
-        /* Base Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 1rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Products Grid */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 1rem;
-            transition: transform 0.3s ease;
-            background: white;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        /* Benefits Section */
-        .benefits-grid {
-            display: grid;
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .benefit-item {
-            text-align: center;
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        /* Testimonials */
-        .testimonial-carousel {
-            display: flex;
-            overflow-x: auto;
-            padding: 2rem;
-            scroll-snap-type: x mandatory;
-        }
-
-        .testimonial {
-            flex: 0 0 300px;
-            margin-right: 2rem;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            scroll-snap-align: start;
-        }
-
-        /* FAQ */
-        .faq-item {
-            margin: 1rem 0;
-            border-bottom: 1px solid #eee;
-            padding: 1rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #2d3748;
-            color: white;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        /* Responsive Design */
-        @media (min-width: 768px) {
-            .benefits-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .hero {
-                padding: 6rem 1rem;
-            }
-        }
-
-        /* Utilities */
-        .cta-primary {
-            background: #48bb78;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: opacity 0.3s;
-        }
-
-        .cta-primary:hover {
-            opacity: 0.9;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-    </style>
+    <meta name="description" content="Transform Your Business with Premium eBooks & Excel Templates. Save Time, Boost Productivity, and Achieve Success.">
+    <meta name="keywords" content="eBook Templates, Excel Templates, Downloadable Resources, Business Tools">
+    <meta name="author" content="Your Brand">
+    <title>eBooks & Excel Templates | Download Now</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Business with Premium eBooks & Excel Templates</h1>
-            <p class="subheadline">Save Time, Boost Productivity, and Achieve Success</p>
-            <button class="cta-primary">Explore Templates</button>
-            <div id="countdown-timer" style="margin-top: 1rem; font-weight: bold;"></div>
-        </div>
+        <h1>Transform Your Business with Premium eBooks & Excel Templates</h1>
+        <p>Save Time, Boost Productivity, and Achieve Success</p>
+        <a href="#products" class="cta-button">Explore Templates</a>
     </header>
 
-    <!-- Products Grid -->
-    <section class="products">
-        <h2 style="text-align: center; padding: 2rem 0">Featured Templates</h2>
+    <section id="products" class="product-showcase">
+        <h2>Our Bestselling eBooks & Excel Templates</h2>
         <div class="product-grid">
-            <div class="product-card">
-                <img src="images/ebook-template.jpg" alt="Professional Business eBook Template" loading="lazy">
+            <div class="product">
+                <img src="ebook1.jpg" alt="Business Strategy eBook">
                 <h3>Business Strategy eBook</h3>
-                <p class="product-description">Comprehensive guide to scaling your business</p>
-                <p class="price">$49.99</p>
-                <button class="cta-primary">Buy Now</button>
+                <p>Master the art of business strategy with this comprehensive guide.</p>
+                <span class="price">$19.99</span>
+                <a href="#" class="buy-button">Buy Now</a>
             </div>
-            <!-- Add more product cards -->
+            <div class="product">
+                <img src="excel1.jpg" alt="Financial Planning Excel Template">
+                <h3>Financial Planning Excel Template</h3>
+                <p>Streamline your financial planning with this customizable template.</p>
+                <span class="price">$9.99</span>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section class="benefits">
-        <h2 style="text-align: center; padding: 2rem 0">Why Choose Our Templates?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <i class="fas fa-rocket fa-2x"></i>
-                <h3>Instant Download</h3>
-                <p>Get immediate access after purchase</p>
-            </div>
-            <!-- Add more benefits -->
-        </div>
+        <h2>Why Choose Our Templates?</h2>
+        <ul>
+            <li>✅ Professionally Designed</li>
+            <li>✅ Fully Customizable</li>
+            <li>✅ Instant Download</li>
+        </ul>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials">
-        <h2 style="text-align: center; padding: 2rem 0">Success Stories</h2>
-        <div class="testimonial-carousel">
-            <div class="testimonial">
-                <img src="images/user1.jpg" alt="Sarah Johnson testimonial">
-                <p>"These templates revolutionized our workflow!"</p>
-                <div class="stars">★★★★★</div>
-            </div>
-            <!-- Add more testimonials -->
-        </div>
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <p>"These templates have saved me so much time! Highly recommended."</p>
+            <cite>- John Doe</cite>
+        </blockquote>
     </section>
 
-    <!-- FAQ -->
     <section class="faq">
-        <h2 style="text-align: center; padding: 2rem 0">Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <button class="faq-question">How do I download purchased templates?</button>
-            <div class="faq-answer">
-                <p>Instant access via email after payment confirmation.</p>
-            </div>
-        </div>
-        <!-- Add more FAQs -->
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>How do I download the templates?</summary>
+            <p>After purchase, you will receive a download link via email.</p>
+        </details>
+        <details>
+            <summary>Can I edit the templates?</summary>
+            <p>Yes, all templates are fully customizable.</p>
+        </details>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div style="max-width: 1200px; margin: 0 auto; display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))">
-            <div class="newsletter">
-                <h3>Get Updates</h3>
-                <form>
-                    <input type="email" placeholder="Enter your email" style="padding: 0.5rem; margin-right: 0.5rem">
-                    <button type="submit" style="padding: 0.5rem 1rem">Subscribe</button>
-                </form>
-            </div>
-            <div class="footer-links">
-                <a href="/about" style="color: white; display: block; margin: 0.5rem 0">About Us</a>
-                <a href="/contact" style="color: white; display: block; margin: 0.5rem 0">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="#" style="color: white; margin: 0 0.5rem"><i class="fab fa-facebook"></i></a>
-                <a href="#" style="color: white; margin: 0 0.5rem"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #4a5568">
-            <img src="images/ssl-badge.png" alt="SSL Secure" style="height: 40px; margin: 0 1rem">
-            <p style="margin-top: 1rem">© 2024 DigitalBizTools. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 Your Brand. All rights reserved.</p>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
     </footer>
-
-    <script>
-        // Countdown Timer
-        function initializeCountdown() {
-            const timer = document.getElementById('countdown-timer');
-            const targetDate = new Date('2024-12-31').getTime();
-            
-            const updateTimer = () => {
-                const now = new Date().getTime();
-                const distance = targetDate - now;
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                timer.innerHTML = `${days} Days Left for 50% Discount!`;
-            };
-            
-            setInterval(updateTimer, 1000);
-            updateTimer();
-        }
-
-        // FAQ Accordion
-        function initializeFAQ() {
-            document.querySelectorAll('.faq-question').forEach(item => {
-                item.addEventListener('click', () => {
-                    const answer = item.nextElementSibling;
-                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-                });
-            });
-        }
-
-        // Initialize all components
-        document.addEventListener('DOMContentLoaded', () => {
-            initializeCountdown();
-            initializeFAQ();
-        });
-
-        // Google Analytics
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P5RPKDJJ0R');
-    </script>
 </body>
 </html>
